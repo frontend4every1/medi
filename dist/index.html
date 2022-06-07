@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css?_v=20220607175640" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220607175640"
+  />
+  <link rel="stylesheet" href="./css/main.min.css?_v=20220607175640" />
+</head>
+
+<body>
+  <header class="header" id="header">
+  <div class="header__inner">
+    <div class="header__top">
+      <div class="header__container container">
+        <div class="logo">
+          <a class="logo__link" href="/">
+            <img class="logo__img" src="img/full-logo.svg" alt="" />
+          </a>
+        </div>
+
+        <div class="phone">
+          <a class="phone__link" href="tel:998950044048">+998 (95) 004-40-48</a>
+        </div>
+
+        <div class="dropdown">
+          <div class="dropdown__inner">
+            <span class="dropdown__txt">Наши салоны</span>
+            <div class="dropdown__image">
+              <i class="ri-arrow-down-s-fill"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="impaired">
+          <button class="impaired__btn">
+            <i class="ri-eye-line impaired__icon"></i>
+            <span class="impaired__txt">Версия для слабовидящих</span>
+          </button>
+        </div>
+
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <i class="ri-telegram-fill"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <i class="ri-youtube-fill"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <i class="ri-facebook-circle-fill"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <i class="ri-instagram-fill"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> <!-- header__top end -->
+
+    <div class="header__bottom bottom-header">
+      <div class="bottom-header__container container">
+        <nav class="bottom-header__nav">
+          <ul class="bottom-header__list">
+            <li class="bottom-header__item">
+              <a class="bottom-header__link" href="#">Косметология</a>
+            </li>
+            <li class="bottom-header__item">
+              <a class="bottom-header__link" href="#">Пластическая хирургия</a>
+            </li>
+            <li class="bottom-header__item">
+              <a class="bottom-header__link" href="#">Стоматология</a>
+            </li>
+            <li class="bottom-header__item">
+              <a class="bottom-header__link" href="#">Лазерная медицина</a>
+            </li>
+            <li class="bottom-header__item">
+              <a class="bottom-header__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        
+        <a class="bottom-header__appointment" href="#">Запись на прием</a>
+      </div>
+    </div>
+  </div>
+</header>
+  <main class="main" id="main">
+    <section class="hero" id="hero">
+  <div class="container">
+    <div class="hero__inner">
+      <div class="hero__data">
+        <h1 class="hero__title">Косметология</h1>
+        <p class="hero__description">Современный мир диктует новые каноны жизни: ухоженное лицо и тело, стройная, подтянутая фигура — сегодня это неотъемлемые черты привлекательной внешности, характеризующие человека благополучного и успешного.</p>
+        <a class="hero__button button" href="#">Подробнее</a>
+      </div>
+
+      <div class="hero__slider hero-slider">
+        <div class="hero-swiper swiper">
+          <div class="hero-swiper__wrapper swiper-wrapper">
+            <div class="hero-swiper__slide swiper-slide">
+              <picture><source srcset="img/hero.webp" type="image/webp"><img class="hero-swiper__image" src="img/hero.jpg" alt="" /></picture>
+            </div>
+            <div class="hero-swiper__slide swiper-slide">
+              <picture><source srcset="img/hero.webp" type="image/webp"><img class="hero-swiper__image" src="img/hero.jpg" alt="" /></picture>
+            </div>
+            <div class="hero-swiper__slide swiper-slide">
+              <picture><source srcset="img/hero.webp" type="image/webp"><img class="hero-swiper__image" src="img/hero.jpg" alt="" /></picture>
+            </div>
+          </div>
+        </div>
+        <div class="hero-slider__button hero-slider__button--prev swiper-button-prev">
+          <img src="img/arrow-left.svg" />
+        </div>
+        <div class="hero-slider__button hero-slider__button--next swiper-button-next">
+          <img src="img/arrow-right.svg" />
+        </div>
+      </div>
+    </div>
+    
+    <div class="hero__bottom">
+      <div class="hero__bottom-item hero__bottom-item--one">Комплексные процедуры</div>
+      <div class="hero__bottom-item">Центр обучения</div>
+      <div class="hero__bottom-item">VIP клиентам</div>
+    </div>
+  </div>
+</section>
+    <section class="innovation" id="innovation">
+  <div class="container">
+    <div class="innovation__row row gy-5">
+      <div class="innovation__col col-md-12 col-lg-12 col-xl-6">
+        <div class="innovation__left">
+          <div class="innovation__data">
+            <span class="innovation__badge badge">Инновации</span>
+  
+            <h3 class="innovation__title">Мы практикуем новый курс<br> процедур аппаратной<br> косметологии</h3>
+            <a class="innovation__link" href="#">
+              <span class="innovation__arrow">
+                <img class="innovation__arrow-right" src="img/arrow-right-20.svg" />
+              </span>
+              Подробнее
+            </a>
+          </div>
+  
+          <div class="innovation__image">
+            <picture><source srcset="img/hero.webp" type="image/webp"><img class="innovation__img" src="img/hero.jpg" alt="" /></picture>
+          </div>
+        </div>
+      </div>
+
+      <div class="innovation__col col-md-12 col-lg-12 col-xl-6">
+        <div class="innovation__right">
+          <span class="innovation__badge badge">Эстетика красоты</span>
+  
+          <ul class="innovation__list">
+            <li class="innovation__item">
+              <span class="innovation__number">78</span>
+              Современных центра<br> в странах СНГ
+            </li>
+            <li class="innovation__item">
+              <span class="innovation__number">78</span>
+              Современных центра<br> в странах СНГ
+            </li>
+            <li class="innovation__item">
+              <span class="innovation__number">20</span>
+              Уникальных патентов<br> в области косметологии
+            </li>
+            <li class="innovation__item">
+              <span class="innovation__number">78</span>
+              Современных центра<br> в странах СНГ
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="news" id="news">
+  <div class="container">
+    <div class="news__inner">
+      News
+    </div>
+  </div>
+</section>
+  </main>
+  <footer class="footer">
+  <div class="container">
+    FOOTER
+  </div>
+</footer>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220607175640"></script>
+  <script src="./js/scripts.min.js?_v=20220607175640"></script>
+</body>
+
+</html>
