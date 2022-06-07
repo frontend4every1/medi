@@ -4,12 +4,12 @@
 @import
   'config/functions',
   'config/variables',
-  'config/maps',
   'config/mixins';
 
 // 2. Vendors
 @import
-  'vendor/normalize';
+  'vendor/normalize',
+  'vendor/bootstrap';
 
 // 3. Base stuff
 @import

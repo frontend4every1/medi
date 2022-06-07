@@ -1,3 +1,5 @@
+import {Toast} from "bootstrap";
+
 import * as azFunctions from "./modules/functions.js";
 azFunctions.isWebp();
 
