@@ -1,129 +1,111 @@
 .innovation {
-  padding: 80px 0 0 0;
-
+  padding: 80px 0 80px 0;
   &__row {
     justify-content: space-between;
     align-items: center;
   }
-  
-  &__col {
-    &:nth-child(2) {
-      @media (max-width: 1199.5px) {
-        order: -1;
-      }
-    }
-  }
 
-  &__left {
-    background-color: $accent-1;
-    max-width: 526px;
-    width: 100%;
-    margin: 0 auto;
+  &__col {
+    position: relative;
   }
 
   &__data {
-    ::selection {
-      background-color: $accent-2;
-      color: #fff;
-    }
-    padding: 35px 100px 45px 40px;
-    color: #fff;
-  }
-
-  &__badge {
-    margin: 0 0 30px 0;
-    display: inline-block;
+    background-color: #00868A;
+    padding: 35px 40px 45px 40px;
   }
 
   &__title {
-    font-size: 30px;
+    font-size: 24px;
     line-height: 150%;
-    margin: 0 0 25px 0;
-    @media (max-width: 1200px) {
-      font-size: 24px;
+    color: #fff;
+    max-width: 320px;
+    margin: 30px 0 25px 0;
+    @media (min-width: 1200px) {
+      font-size: 30px;
+      max-width: 400px;
     }
   }
 
-  &__link {
-    display: inline-flex;
+  &__btn {
+    display: flex;
     align-items: center;
     gap: 20px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+    cursor: pointer;
   }
 
   &__arrow {
     width: 50px;
     height: 40px;
     border: 1px solid #fff;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  &__arrow-right {
+  &__arrow-img {
+  }
+
+  &__btn-txt {
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
   }
 
   &__image {
-    max-width: 526px;
-    height: 230px;
   }
 
   &__img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
 
-  &__right {
-    position: relative;
-    max-width: 636px;
-    width: 100%;
-    height: 441px;
-    margin: 0 auto;
-    &::before {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      background-image: url("../img/sertificate.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      width: 306px;
-      height: 400px;
-      z-index: -1;
+  &__col--right {
+    padding: 50px 0 50px 0;
+    @media (min-width: 992px) {
+      padding: 0 0 0 0;
     }
+  }
+
+  &__info {
+    margin: 30px 0 0 0;
   }
 
   &__list {
-    &:not(:last-child) {
-      margin-bottom: 15px;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 
   &__item {
-    display: flex;
+    opacity: 0.3;
+    display: inline-flex;
     align-items: center;
     gap: 20px;
-    transition: 0.5s ease-in;
-    opacity: 0.3;
-    &:hover {
-      opacity: 1;
-      font-size: 28px;
-      margin: 5px 0 5px 0;
-    }
-    &:hover .innovation__number {
-      color: $accent-1;
-      font-size: 96px;
-    }
   }
 
   &__number {
-    transition: 0.5s ease-in;
     font-size: 48px;
+    line-height: 150%;
+  }
+
+  &__item-txt {
+    font-size: 14px;
+    line-height: 150%;
+    max-width: 155px;
+  }
+
+  &__image--absolute {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 200px;
+    @media (min-width: 576px) {
+      width: 250px;
+    }
+    @media (min-width: 768px) {
+      width: 306px;
+    }
   }
 }
