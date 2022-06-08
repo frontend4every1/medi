@@ -1,9 +1,26 @@
 .header {
-  position: relative;
+  position: absolute;
   z-index: 1000;
+  width: 100%;
+  background-color: #fff;
+
+  &__bottom {
+    display: none;
+    background-color: #4FBFA5;
+    padding: 24px 0 24px 0;
+    @media (min-width: 992px) {
+      display: block;
+    }
+  }
+
+  &__bottom-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
-.nav {
+.top-nav {
   padding: 0 0 0 0;
   &__logo {
     margin-right: 0;
@@ -11,6 +28,9 @@
     @media (min-width: 992px) {
       border-right: 1px solid #c4c4c4;
       border-left: 1px solid #c4c4c4;
+      padding: 17px 31.5px 17px 31.5px;
+    }
+    @media (min-width: 1200px) {
       padding: 17px 15px 17px 15px;
     }
     @media (min-width: 1400px) {
@@ -29,20 +49,26 @@
   }
 
   &__link {
-    padding: 36px 15px 35px 15px;
+    padding: 10px 0 10px 0;
     line-height: 19px;
-    color: #000;
+    color: #4FBFA5;
     &:hover, &:active, &:focus {
-      color: #4FBFA5;
+      color: #000;
     }
     @media (min-width: 992px) {
       padding: 36px 30px 35px 30px;
+      color: #000;
+      &:hover, &:active, &:focus {
+        color: #4FBFA5;
+      }
     }
     @media (min-width: 1200px) {
       padding: 36px 18px 35px 18px;
+      color: #000;
     }
     @media (min-width: 1400px) {
-      padding: 36px 30px 35px 30px;
+      padding: 36px 45px 35px 46px;
+      color: #000;
     }
   }
 }
@@ -76,7 +102,10 @@
 }
 
 .social {
-  display: flex;
+  display: none;
+  @media (min-width: 992px) {
+    display: flex;
+  }
   &__item {
     border-right: 1px solid #c4c4c4;
   }
@@ -88,7 +117,7 @@
       padding: 27px 30.5px 27px 30.5px;
     }
     @media (min-width: 1200px) {
-      padding: 27px 16px 27px 16px;
+      padding: 27px 24px 27px 23px;
     }
     @media (min-width: 1400px) {
       padding: 27px 27px 27px 27px;
@@ -100,5 +129,49 @@
 
   &__icon {
     font-size: 24px;
+  }
+}
+
+.bottom-nav {
+  width: 75%;
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin: 0 5px 0 0;
+    }
+  }
+
+  &__link {
+    line-height: 150%;
+    color: #fff;
+    transition: 0.3s ease-in;
+    padding: 0 0 4px 0;
+    border-bottom: 1px dashed transparent;
+    &:hover, &:active, &:focus {
+      color: #fff;
+      border-bottom-color: #fff;
+    }
+    @media (min-width: 1200px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.appointment {
+  padding: 10px 15px 10px 15px;
+  white-space: nowrap;
+  background-color: #fff;
+  font-size: 18px;
+  line-height: calc(22 / 18 * 100%);
+  color: #000;
+  transition: 0.3s ease-in;
+  &:hover, &:active, &:focus {
+    background-color: rgb(236, 232, 232);
   }
 }

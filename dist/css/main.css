@@ -7481,6 +7481,12 @@ a {
   display: inline-block;
 }
 
+a:hover,
+a:active,
+a:focus {
+  color: inherit;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -7554,33 +7560,53 @@ body {
 }
 
 .header {
-  position: relative;
+  position: absolute;
   z-index: 1000;
+  width: 100%;
+  background-color: #fff;
 }
 
-.nav {
+.header__bottom {
+  display: none;
+  background-color: #4FBFA5;
+  padding: 24px 0 24px 0;
+}
+
+.header__bottom-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top-nav {
   padding: 0 0 0 0;
 }
 
-.nav__logo {
+.top-nav__logo {
   margin-right: 0;
   padding: 17px 0 17px 0;
 }
 
-.nav__list {
+.top-nav__list {
   width: 100%;
 }
 
-.nav__link {
-  padding: 36px 15px 35px 15px;
+.top-nav__link {
+  padding: 10px 0 10px 0;
   line-height: 19px;
-  color: #000;
+  color: #4FBFA5;
 }
 
-.nav__link:hover,
-.nav__link:active,
-.nav__link:focus {
-  color: #4FBFA5;
+.top-nav__link:hover,
+.top-nav__link:active,
+.top-nav__link:focus {
+  color: #000;
 }
 
 .impaired {
@@ -7616,9 +7642,7 @@ body {
 }
 
 .social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
 
 .social__item {
@@ -7640,7 +7664,62 @@ body {
   font-size: 24px;
 }
 
+.bottom-nav {
+  width: 75%;
+}
+
+.bottom-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.bottom-nav__item:not(:last-child) {
+  margin: 0 5px 0 0;
+}
+
+.bottom-nav__link {
+  line-height: 150%;
+  color: #fff;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  padding: 0 0 4px 0;
+  border-bottom: 1px dashed transparent;
+}
+
+.bottom-nav__link:hover,
+.bottom-nav__link:active,
+.bottom-nav__link:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.appointment {
+  padding: 10px 15px 10px 15px;
+  white-space: nowrap;
+  background-color: #fff;
+  font-size: 18px;
+  line-height: 122.2222222222%;
+  color: #000;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.appointment:hover,
+.appointment:active,
+.appointment:focus {
+  background-color: rgb(236, 232, 232);
+}
+
 .hero {
+  padding: 90px 0 90px 0;
   background-color: #4fbfa5;
 }
 
@@ -7711,6 +7790,18 @@ body {
           flex: 2;
 }
 
+.hero-swiper {
+  width: 50vw;
+}
+
+.hero-swiper__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: middle;
+}
+
 .hero-slider__button {
   width: 62px;
   height: 52px;
@@ -7734,19 +7825,6 @@ body {
 .hero-slider__button--next.swiper-button-next::after,
 .hero-slider__button--prev.swiper-button-prev::after {
   font-size: 0;
-}
-
-.hero-swiper {
-  width: 746px;
-  height: 532px;
-}
-
-.hero-swiper__image {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  vertical-align: middle;
 }
 
 .innovation {
@@ -11422,18 +11500,35 @@ body {
     text-align: center !important;
   }
 
-  .nav__logo {
+  .header__bottom {
+    display: block;
+  }
+
+  .top-nav__logo {
     border-right: 1px solid #c4c4c4;
     border-left: 1px solid #c4c4c4;
-    padding: 17px 15px 17px 15px;
+    padding: 17px 31.5px 17px 31.5px;
   }
 
-  .nav__item {
+  .top-nav__item {
     border-right: 1px solid #c4c4c4;
   }
 
-  .nav__link {
+  .top-nav__link {
     padding: 36px 30px 35px 30px;
+    color: #000;
+  }
+
+  .top-nav__link:hover,
+  .top-nav__link:active,
+  .top-nav__link:focus {
+    color: #4FBFA5;
+  }
+
+  .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .social__link {
@@ -12671,8 +12766,13 @@ body {
     font-size: 1.5rem !important;
   }
 
-  .nav__link {
+  .top-nav__logo {
+    padding: 17px 15px 17px 15px;
+  }
+
+  .top-nav__link {
     padding: 36px 18px 35px 18px;
+    color: #000;
   }
 
   .impaired {
@@ -12685,7 +12785,11 @@ body {
   }
 
   .social__link {
-    padding: 27px 16px 27px 16px;
+    padding: 27px 24px 27px 23px;
+  }
+
+  .bottom-nav__link {
+    font-size: 18px;
   }
 
   .innovation__title {
@@ -13843,12 +13947,13 @@ body {
     text-align: center !important;
   }
 
-  .nav__logo {
+  .top-nav__logo {
     padding: 17px 36px 17px 36px;
   }
 
-  .nav__link {
-    padding: 36px 30px 35px 30px;
+  .top-nav__link {
+    padding: 36px 45px 35px 46px;
+    color: #000;
   }
 
   .social__link {
