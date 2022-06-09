@@ -3,7 +3,7 @@ import {Toast} from "bootstrap";
 import * as azFunctions from "./modules/functions.js";
 azFunctions.isWebp();
 
-const heroSwiper = new Swiper('.hero-swiper', {
+const heroSwiper = new Swiper('.hero-slider__swiper', {
   // loop: true,
   // direction: "vertical",
   navigation: {
