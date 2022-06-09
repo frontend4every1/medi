@@ -151,7 +151,7 @@
     line-height: 150%;
     color: #fff;
     transition: 0.3s ease-in;
-    padding: 0 0 4px 0;
+    padding: 4px 0 4px 0;
     border-bottom: 1px dashed transparent;
     &:hover, &:active, &:focus {
       color: #fff;
@@ -167,11 +167,13 @@
   padding: 10px 15px 10px 15px;
   white-space: nowrap;
   background-color: #fff;
-  font-size: 18px;
   line-height: calc(22 / 18 * 100%);
   color: #000;
   transition: 0.3s ease-in;
   &:hover, &:active, &:focus {
     background-color: rgb(236, 232, 232);
+  }
+  @media (min-width: 1200px) {
+    font-size: 18px;
   }
 }
