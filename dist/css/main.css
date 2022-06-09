@@ -7799,6 +7799,7 @@ body {
 .hero-slider__button.swiper-button-next,
 .hero-slider__button.swiper-button-prev {
   bottom: -55px;
+  top: auto;
 }
 
 .hero-slider__button--next.swiper-button-next {

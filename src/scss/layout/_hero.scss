@@ -87,17 +87,18 @@
     &.swiper-button-next,
     &.swiper-button-prev {
       bottom: -55px;
+      top: auto;
     }
 
     &--next.swiper-button-next {
-      right: 40%;
+      right: 36%;
       @media (min-width: 992px) {
         left: -75px;
       }
     }
 
     &--prev.swiper-button-prev {
-      left: 40%;
+      left: 36%;
       @media (min-width: 992px) {
         left: -135px;
       }
