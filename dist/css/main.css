@@ -7922,6 +7922,65 @@ body {
   width: 200px;
 }
 
+.specials__cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+.specials__card {
+  position: relative;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.specials__card-img img {
+  width: 100%;
+}
+
+.specials__sticker {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+
+.specials__data {
+  padding: 30px 25px 30px 25px;
+  background-color: #00868a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.specials__data-txt {
+  max-width: 180px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 150%;
+  color: #fff;
+}
+
+.specials__arrow {
+  width: 50px;
+  height: 40px;
+  border: 1px solid #fff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .button {
   text-transform: uppercase;
   background-color: #00868a;
@@ -9173,6 +9232,11 @@ body {
   .innovation__image--absolute {
     width: 250px;
   }
+
+  .specials__cards {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (min-width: 768px) {
@@ -10323,6 +10387,11 @@ body {
 
   .innovation__image--absolute {
     width: 306px;
+  }
+
+  .specials__cards {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -11547,6 +11616,11 @@ body {
 
   .innovation__col--right {
     padding: 0 0 0 0;
+  }
+
+  .specials__cards {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -12804,6 +12878,11 @@ body {
     font-size: 30px;
     max-width: 400px;
   }
+
+  .specials__cards {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (min-width: 1400px) {
@@ -13966,6 +14045,11 @@ body {
 
   .social__link {
     padding: 27px 27px 27px 27px;
+  }
+
+  .specials__cards {
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
