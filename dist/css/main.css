@@ -11599,7 +11599,7 @@ body {
   }
 
   .hero-slider .swiper {
-    width: 101.6%;
+    width: 100%;
   }
 
   .hero-slider__button {
@@ -12868,6 +12868,10 @@ body {
 
   .appointment {
     font-size: 18px;
+  }
+
+  .hero__bottom-item {
+    font-size: 21px;
   }
 
   .hero-slider__button {
@@ -14787,11 +14791,5 @@ body {
 
   .d-print-none {
     display: none !important;
-  }
-}
-
-@media (min-wdith: 1200px) {
-  .hero__bottom-item {
-    font-size: 21px;
   }
 }
